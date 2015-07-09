@@ -16,7 +16,7 @@ linkedinEmail = '';
 
 linkedinPassword = '';
 
-linkedInPeopleSearch = ''
+linkedInPeopleSearch = '';
 
 
 // 2. Macro Initialization
