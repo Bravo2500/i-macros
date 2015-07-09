@@ -36,7 +36,7 @@ macro += 'SET !ERRORIGNORE YES' + '\n';
 // 3. Clear Cookies, Cache and Set a Proxy
 
 
-macro += "CLEAR" + "\n";
+//macro += "CLEAR" + "\n";
 
 if (proxy !== "") {
 	macro += "PROXY ADDRESS=" + proxy + "\n";
@@ -45,7 +45,7 @@ if (proxy !== "") {
 
 // 4. Linkedin Sign In
 
-
+/*
 macro += 'TAB T=1' + '\n';
 
 macro += 'TAB CLOSEALLOTHERS' + '\n';
@@ -61,7 +61,7 @@ macro += 'TAG POS=1 TYPE=INPUT:PASSWORD FORM=NAME:login ATTR=NAME:session_passwo
 macro += 'WAIT SECONDS=2' + '\n';
 
 macro += 'TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:login ATTR=NAME:signin' + '\n';
-
+*/
 
 // 5. Auto-Visit & Close Profiles
 
