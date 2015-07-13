@@ -25,6 +25,8 @@ macro += 'SET !ERRORIGNORE YES' + '\n';
 
 macro += 'URL GOTO=' + quoraLink + '\n';
 
+// 3. Open comments
+
 for (i = 1; i <= 2; i++) {
 
 	macro += 'TAG POS=' + i + ' TYPE=A ATTR=TXT:Comments*\n';
@@ -36,6 +38,8 @@ for (i = 1; i <= 2; i++) {
 }
 
 macro += 'WAIT SECONDS=20' + '\n';
+
+// 4. Upvote everything
 
 for (i = 1; i <= 50; i++) {
 
@@ -49,7 +53,7 @@ for (i = 1; i <= 50; i++) {
 }
 
 
-// 3. Run The Macro
+// 5. Run The Macro
 
 
 iimDisplay("iMacro is now running. Let's hack growth.");

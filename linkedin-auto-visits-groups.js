@@ -6,15 +6,9 @@
 // 1. Variables Initialization
 
 
-var macro, proxy, linkedinEmail, linkedinPassword, linkedinGroup, i, j;
+var macro, proxy, linkedinGroup, i, j;
 
 macro = '';
-
-proxy = '';
-
-linkedinEmail = '';
-
-linkedinPassword = '';
 
 linkedinGroup = '';
 
@@ -33,37 +27,7 @@ macro += 'SET !TIMEOUT_PAGE 45' + '\n';
 macro += 'SET !ERRORIGNORE YES' + '\n';
 
 
-// 3. Clear Cookies, Cache and Set a Proxy
-
-
-//macro += "CLEAR" + "\n";
-
-if (proxy !== "") {
-	macro += "PROXY ADDRESS=" + proxy + "\n";
-}
-
-
-// 4. Linkedin Sign In
-
-/*
-macro += 'TAB T=1' + '\n';
-
-macro += 'TAB CLOSEALLOTHERS' + '\n';
-
-macro += 'WAIT SECONDS=1' + '\n';
-
-macro += 'URL GOTO=https://www.linkedin.com/' + '\n';
-
-macro += 'TAG POS=1 TYPE=INPUT:TEXT FORM=NAME:login ATTR=NAME:session_key CONTENT=' + linkedinEmail + '\n';
-
-macro += 'TAG POS=1 TYPE=INPUT:PASSWORD FORM=NAME:login ATTR=NAME:session_password CONTENT=' + linkedinPassword + '\n';
-
-macro += 'WAIT SECONDS=2' + '\n';
-
-macro += 'TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:login ATTR=NAME:signin' + '\n';
-*/
-
-// 5. Auto-Visit & Close Profiles
+// 3. Auto-Visit & Close Profiles
 
 
 macro += 'WAIT SECONDS=2' + '\n';
@@ -85,7 +49,7 @@ for (i = 2; i <= 25; i++) {
 }
 
 
-// 6. Run The Macro
+// 4. Run The Macro
 
 
 iimDisplay("iMacro is now running. Let's hack growth.");
