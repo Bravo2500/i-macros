@@ -7,7 +7,7 @@ macro = '';
 
 proxy = '';
 
-quoraLink = 'https://www.quora.com/search?q=finance&type=answer';
+quoraLink = '';
 
 
 // 2. Macro
